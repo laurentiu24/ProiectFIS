@@ -1,5 +1,5 @@
 package loose.oose.fis;
-
+import loose.oose.fis.documents.Fisier;
 import loose.oose.fis.documents.Document;
 import loose.oose.fis.documents.JSON;
 import loose.oose.fis.documents.XML;
@@ -12,7 +12,9 @@ import java.util.ArrayList;
 public class Main {
 
     public static void main(String[] args) {
-
+      Fisier f = new Fisier("Laurentiu", "l");
+      f.salveazaVersiune();
+        System.out.println(f.toString());
         String[] xmlList = new String[6];
         xmlList[0] = "<tag1>";
         xmlList[1] = "text1";
